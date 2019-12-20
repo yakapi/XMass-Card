@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+/*=========================== Class Perso ========================== */
+body{
+  background-image: url('../img/christmas.jpg');
+  background-size: cover;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	font-size: 16px;
+}
+.ovh{
+	overflow: hidden;
+}
+.fs-1{
+  font-size: 45px;
+}
+.fs-2{
+  font-size: 28px;
+}
+.fs-3{
+  font-style: 22px;
+}
+.fs-4{
+  font-size: 16px;
+}
+.txt-name{
+	font-family: 'Marck Script', cursive;
+}
+.z-i{
+	z-index: 999;
+}
+.rltv{
+ position: relative;
+ }
+ .ablst{
+ position: absolute;
+ }
+ .h-100{
+ height: 100%;
+ }
+ .w-100{
+ width: 100%;
+ }
+ .m-auto{
+	 margin: auto;
+ }
+ .curs-p{
+	 cursor: pointer;
+ }
+ .brd{
+ border: 2px solid red;
+ }
+ .pall-15{
+ padding: 15px;
+ }
+ .mall-15{
+ margin: 15px;
+ }
+ .txt-pc{
+ color: white;
+ }
+ .txt-sc{
+ color: orange;
+ }
+ .flx-ac{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ }
+ .dis-none{
+	 display: none;
+ }
+ .da-blk{
+	 display: block;
+ }
+ .txt-c{
+	 text-align: center;
+ }
+.fw-b{
+	font-weight: bold;
+}
+/*====================================================*/
+/*====================Page d'accueil=====================*/
+/*====================================================*/
+#en-tete{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#corps-page{
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#e-card{
+  width: 55%;
+  height: 30%;
+}
+#e-card img{
+  transform: translateY(-250px);
+  width: 100%;
+  height: 300%;
+}
+#send-form{
+  height: 65%;
+  width: 45%;
+}
+.card-form{
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.from-name-p, .from-mail-p, .to-name-p, .to-mail-p{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+#corps-page label{
+  padding: 5px 0px;
+}
+#corps-page ::placeholder{
+  padding: 5px 0px;
+}
+.sub-send{
+  padding: 5px 55px;
+  border-radius: 15px;
+  font-size: 18px;
+  background-color: #A91C24;
+  border-color: #A91C24;
+  transition: transform .5s ease-in-out;
+}
+.sub-send:hover{
+  transition: transform .5s ease-in-out;
+}
+/*====================================================*/
+/*====================Page Card=====================*/
+/*====================================================*/
