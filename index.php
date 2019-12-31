@@ -19,20 +19,20 @@
         <h2 class="cl-jaune fs-quatre fw-b mall-15 pall-15 family-title">Choose Card :</h2>
         <div class="encard-card">
           <div class="englobage-card pall-15">
-            <label class="radio-card-block" for="radio-card1">
+            <label id="rad-label1" class="radio-card-block curs-p" for="radio-card1">
               <div class="encard-radio-card">
-                <img src="asset/img/ewishlogo.png" alt="wishCard 1">
+                <img src="asset/img/card-ex1.png" alt="wishCard 1">
               </div>
             </label>
-            <input id="radio-card1" class="radio-put" type="radio" name="card1" value="card1">
+            <input id="radio-card1" class="isexpanded radio-put" type="radio" name="card" value="card1">
           </div>
           <div class="englobage-card pall-15">
-            <label class="radio-card-block" for="radio-card2">
+            <label id="rad-label2" class="rad-label radio-card-block curs-p" for="radio-card2">
               <div class="encard-radio-card">
-                <img src="asset/img/ewishlogo.png" alt="wishCard 2">
+                <img src="asset/img/card-ex2.png" alt="wishCard 2">
               </div>
             </label>
-            <input id="radio-card2" class="radio-put" type="radio" name="card2" value="card2">
+            <input id="radio-card2" class="radio-put" type="radio" name="card" value="card2">
           </div>
         </div>
       </div>
@@ -105,6 +105,7 @@
   </footer>
   <script src="asset/js/jquery-3.4.1.js" type="text/javascript"></script>
   <script src="asset/js/contact-ajax.js" type="text/javascript"></script>
+  <script src="asset/js/select-card.js" type="text/javascript"></script>
 </body>
 </html>
 

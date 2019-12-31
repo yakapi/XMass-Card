@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+/*=========================== Class Perso ========================== */
+@font-face {
+  font-family: "xmass-font";
+  src: url("../font/xmass-font.ttf");
+}
+.txt-who{
+	font-family: "xmass-font", sans-serif;
+}
+body{
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	font-size: 16px;
+}
+.txt-maj{
+	text-transform: uppercase;
+}
+.ovh{
+	overflow: hidden;
+}
+.fs-1{
+  font-size: 56px;
+}
+.fs-2{
+  font-size: 28px;
+}
+.fs-3{
+  font-style: 22px;
+}
+.fs-4{
+  font-size: 16px;
+}
+.txt-name{
+	font-family: 'Marck Script', cursive;
+}
+.z-i{
+	z-index: 999;
+}
+.rltv{
+ position: relative;
+ }
+ .ablst{
+ position: absolute;
+ }
+ .h-100{
+ height: 100%;
+ }
+ .w-100{
+ width: 100%;
+ }
+ .m-auto{
+	 margin: auto;
+ }
+ .curs-p{
+	 cursor: pointer;
+ }
+ .brd{
+ border: 2px solid red;
+ }
+ .pall-15{
+ padding: 15px;
+ }
+ .mall-15{
+ margin: 15px;
+ }
+ .txt-pc{
+ color: white;
+ }
+ .txt-sc{
+ color: orange;
+ }
+ .flx-ac{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ }
+ .dis-none{
+	 display: none;
+ }
+ .da-blk{
+	 display: block;
+ }
+ .txt-c{
+	 text-align: center;
+ }
+.fw-b{
+	font-weight: bold;
+}
+.pall-5{
+	padding: 5px;
+}
+/* Background */
+@keyframes downstars {
+	from {
+		top : 0%;
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		top : 100%;
+	}
+}
+body{
+	background-color: #fab6b7;
+}
+
+.background-card{
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+	/* animation: turncross 18s infinite linear; */
+}
+.background-card svg{
+	width: 100%;
+	height: 100%;
+}
+.box-newYear{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 660px;
+	width: 900px;
+	z-index: 9999;
+}
+.HNY-block{
+	transform: translateY(150px);
+}
+.stars-size{
+	height: 65px;
+	width: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stars-size svg{
+	height: 60%;
+	width: 60%;
+}
+.down-anim{
+	animation: downstars 8s infinite linear;
+}

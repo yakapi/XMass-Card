@@ -50,9 +50,16 @@ a:hover{
 	text-decoration: none;
 }
 /*=========================== Class Perso ========================== */
+@font-face {
+  font-family: "xmass-font";
+  src: url("../font/xmass-font.ttf");
+}
 body{
   height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	font-size: 16px;
+}
+.txt-maj{
+	text-transform: uppercase;
 }
 .ovh{
 	overflow: hidden;
@@ -125,6 +132,9 @@ body{
 .fw-b{
 	font-weight: bold;
 }
+.pall-5{
+	padding: 5px;
+}
 /*====================================================*/
 /*====================Page Card=====================*/
 /*====================================================*/
@@ -133,7 +143,7 @@ body{
 }
 @keyframes upRightBall {
 	from {
-		top: -80px;
+		top: -110%
 	}
 	/* 75% {
 		top: 50%;
@@ -143,34 +153,97 @@ body{
 		top: 110%;
 	}
 }
+
 @keyframes xRightBall {
 	from {
-		left: 0%;
+		transform: translateX(0%);
 	}
 	50% {
-		left: 10%;
+		transform: translateX(1%);
 	}
 
 	to {
-		left: 0%;
+		transform: translateX(0%);
 	}
 }
-@keyframes turnRightBall {
+@keyframes santaClos-move {
 	from {
+		left: -100%;
 		transform: rotate(0deg);
 	}
-	25% {
-		transform: rotate(90deg);
+	10%{
+		left: -2%;
+		top: 9%;
+		transform: rotate(0deg);
+	}
+	20%{
+		left: 12%;
+		top: 3%;
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(35deg);
+	}
+	40%{
+		left: 42%;
+		top: 18%;
+		transform: rotate(35deg);
+	}
+	41%{
+		transform: rotate(0deg);
+
 	}
 	50% {
-		transform: rotate(180deg);
+		transform: rotate(0deg);
+		left: 65%;
+		top: 0%
 	}
-	75% {
-		transform: rotate(270deg);
+	51%{
+		transform: rotate(25deg);
+	}
+	to {
+		top: 10%;
+		left: 200%;
+	}
+}
+@keyframes skieur-move {
+	from {
+		top: 54%;
+		left: -100%;
+	}
+	20%{
+		top: 53%;
+		left: 0%;
+		transform: rotate(10deg);
+	}
+	40% {
+		top: 51%;
+		left: 60%;
+		transform: rotate(12deg);
+	}
+	50%{
+		top: 54%;
+		left: 100%;
+		transform: rotate(17deg);
+	}
+	51%{
+		transform: rotate(-10deg) scaleX(-1);
+	}
+	60%{
+		top: 51%;
+		left: 60%;
+		transform: rotate(-12deg) scaleX(-1);
+	}
+	80%{
+		top: 53%;
+		left: 0%;
+		transform: rotate(-17deg) scaleX(-1);
 	}
 
 	to {
-		transform: rotate(360deg);
+		top: 54%;
+		left: -100%;
+		transform: scaleX(-1);
 	}
 }
 #screen-card{
@@ -179,31 +252,62 @@ body{
 	background-position: center;
 	overflow: hidden;
 }
-.big-flocon{
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	animation: upRightBall 10s infinite linear;
-
-	/* border: 2px solid red; */
+.neige-block1{
+	width: 50%;
+	left: 0px;
+	animation: upRightBall 30s infinite linear;
 }
-.big-flocon svg{
-	position: absolute;
-	animation: xRightBall 1s infinite linear, turnRightBall 15s infinite linear;
-	width: 80%;
-	height: 80%;
-
-	/* border: 2px solid blue; */
+.neige-block2{
+	width: 50%;
+	right: 0px;
+	animation: upRightBall 30s infinite linear;
+}
+.neige1-flocon{
+	animation: xRightBall 2s infinite linear;
 }
 .text-card{
   display: flex;
+	font-family: 'xmass-font', sans-serif;
+	z-index: 9999;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 	color: #A91C24;
-  font-size: 39px;
+  font-size: 46px;
 }
-#damn{
-	animation-duration: 25s;
-	animation-name: upRightBall;
+.wish-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.block-santaClos{
+	left: -200%;
+	top: 10%;
+	height: 120px;
+	width: 180px;
+	animation: santaClos-move 18s infinite linear;
+}
+.block-santaClos svg{
+	height: 100%;
+	width: 100%;
+}
+.block-skieur{
+	/* left: -200%; */
+	top: 56%;
+	height: 120px;
+	width: 180px;
+	animation: skieur-move 18s infinite linear;
+}
+.block-skieur svg{
+	height: 100%;
+	width: 100%;
+}
+.ho-ho-X{
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+.ho-ho-L{
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
 }

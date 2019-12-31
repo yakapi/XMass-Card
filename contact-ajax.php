@@ -139,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">AnyTransfer Me !</center>
               </v:roundrect>
               <![endif]-->
-              <a href="http://vps605256.ovh.net/X-Mass-Card/card.php?who='.$_POST['to-name'].'"style="background-color:#CC4137;border:1px solid #CC4137;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">
+              <a href="http://vps605256.ovh.net/XMass-Card/'. $_POST['card'] .'.php?who='.$_POST['to-name'].'"style="background-color:#CC4137;border:1px solid #CC4137;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">
                 Open eCard
               </a>
             </div>

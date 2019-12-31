@@ -69,12 +69,21 @@ body{
   justify-content: center;
   align-items: center;
 }
+.radio-card-block{
+  height: 87px;
+  width: 169px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .encard-radio-card{
   height: 83px;
+  border-radius: 30px;
   width: 165px;
 }
 .encard-radio-card img{
   height: 100% ;
+  border-radius: 30px;
   width: 100%;
 }
 .radio-put{

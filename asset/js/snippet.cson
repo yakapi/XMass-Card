@@ -1,0 +1,45 @@
+
+'.text.html.php':
+  'meta-responsive':
+    'prefix': 'responsive'
+    'body': '<meta name="viewport" content="width=device-width, initial-scale=1">'
+
+
+
+'.source.js':
+  'math-random':
+    'prefix': 'math-rand'
+    'body': """
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+    """
+  'sizer':
+    'prefix': 'sizer'
+    'body': """
+      parseInt(window.getComputedStyle($1).getPropertyValue("$2"));
+    """
+  'load-js':
+    'prefix': 'ld-js'
+    'body': """
+      $(window).on('load', function(){
+        $(document).ready(function(){
+
+          });
+        });
+    """
+  'create-element':
+    'prefix': 'crt-el'
+    'body': """
+    document.createElement($1);
+    """
+  'add-class':
+    'prefix': 'add-class'
+    'body': """
+    $1.classList.add($2);
+    """
+  'append-child':
+    'prefix': 'apd-child'
+    'body': """
+    $1.appendChild($2);
+    """
