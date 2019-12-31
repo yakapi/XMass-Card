@@ -25,8 +25,8 @@ $(function () {
             success: function(result) {
                 // Si nous n'avons pas de messages d'erreur
                 if (result.isSuccess) {
-                  console.log(result.isSuccess);
-                    $("#result-form").append("<p class='txt-pc'>Votre message a été envoyé.</p>");
+                    $("#choose-card").append("<div class='txt-pc txt-c'>Message sent successfully!</p>");
+
                     // Remettre les valeurs à zéro
                     $("#card-form")[0].reset();
                 }

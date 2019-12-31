@@ -19,19 +19,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
   $contact_val["to_mail"] = $_POST["to-mail"];
   $contact_val["isSuccess"] = true;
   if (empty($contact_val["from_name"])) {
-      $contact_val["from_name_error"] = "Please complete the field name";
+      $contact_val["from_name_error"] = "complete the field name";
       $contact_val["isSuccess"] = false;
   }
   if (empty($contact_val["from_mail"])) {
-      $contact_val["from_mail_error"] = "Please complete the field mail";
+      $contact_val["from_mail_error"] = "complete the field mail";
       $contact_val["isSuccess"] = false;
   }
   if (empty($contact_val["to_name"])) {
-      $contact_val["to_name_error"] = "Please complete the field name of your receiver";
+      $contact_val["to_name_error"] = "complete the field name ";
       $contact_val["isSuccess"] = false;
   }
   if (empty($contact_val["to_mail"])) {
-      $contact_val["to_mail_error"] = "Please complete the field mail of your receiver";
+      $contact_val["to_mail_error"] = "complete the field mail";
       $contact_val["isSuccess"] = false;
   }
   header('Content-type: application/json');
